@@ -1,0 +1,43 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}%Pacote para acentuação
+\usepackage[brazil]{babel} % Escrita em português brasileiro.
+\usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry} %Formato que lembra a ABNT
+\usepackage[T1]{fontenc} %Ajusta o texto que vem de outras fontes
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools,blindtext} %pacotes matemáticos
+
+\begin{document}
+\maketitle
+
+\section{Resumo}
+
+\section{Palavras-chave}
+
+\section{Introdução}
+
+\section{Metodologia}
+
+\subsection{Treinamento de programas que serão utilizados ao longo do projeto.}
+
+ Podemos dizer que a metodologia utilizada nesta pesquisa se divide em algumas etapas sendo elas as de treinamento, implementação, teste e incorporação.
+ Primeiramente começamos com a implementação do treinamento do programa linux através de reuniões semanais assíncronas, onde o professor ensina a desenvolver  comandos básicos como scripts, strings e bash que logo serão utilizados para compartilhamento de dados da pesquisa.
+  Em seguida começando o plano de estudo dirigido de python, onde através de arquivos de diretórios python, e com ajuda da disciplina de Lógica de Programação, pude desenvolver algumas habilidades de operadores aritméticos, módulos, funções, condições e estruturas de repetição.
+  Também tivemos uma breve introdução de supercomputadores através de um encontro assíncrono, compreendemos um pouco sobre cluster’s (supercomputadores) onde vimos um pouco de Machine Learning através do NPAD.
+
+\subsection{Implementação do algoritmo em códigos.}
+
+ Após a fase de treinamento, começamos a desenvolver a implementação de um código de algoritmo orientado a objeto, no qual introduzimos a \textbf{Differential Evolution (DE)}, que se trata de um método de otimização de um problema, onde ele tenta melhorar um resultado. O DE tem o intuito de solucionar um problema, onde uma população \textbf{x} cria novas soluções de candidatos, combinando as existentes de acordo com a fórmula, gerando uma melhor pontuação para problemas de otimização.
+ o DE funciona da seguinte maneira 
+
+Inicialização > Mutação > Recombinação > Seleção > Mutação > Recombinação > Seleção > Mutação %transformar em uma imagem
+
+ O programa se repete até obter seus melhores resultados.
+Portanto, o programa ocorre através de: \textbf{NP} (Number Parents), \textbf{CR E [0,1]} (Crossover Probability) e \textbf{F E [0.2]} (parâmetro do peso diferencial). Configurações típicas como \textbf{F = 0.8} e \textbf{CR =0.9}. Logo a optimização da performance fornece agentes \textbf{X} aleatórios, dos quais rodam em um espaço de busca até seus requisitos serem atendidos. A escolha de três agentes vetoriais são escolhidas. Em seguida escolhemos um índice de dimensão aleatório, computamos tudo é jogamos na fórmula do \textbf{yi = ai + F x (bi - ci)}, sendo \textbf{a, b e c} os vetores escolhidos aleatoriamente levando em consideração de \textbf{ri <CR} ou  \textbf{i = R}. De caso \textbf{f(y) <= f(x)} substituímos o agente \textbf{x} na população pela melhor solução.
+
+
+\section{Resultados e Discussões}
+
+\section{Conclusão}
+
+\section{Referências}
+
+\end{document}
